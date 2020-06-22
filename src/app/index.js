@@ -1,6 +1,6 @@
 import React from 'react'
 
-function App() {
+function App () {
   const getGreetingMessage = (name) => `Hi, ${name}`
   return (
     <div>
