@@ -1,10 +1,9 @@
 import React from 'react'
 
 function App () {
-  const getGreetingMessage = (name) => `Hi, ${name}`
   return (
     <div>
-      <h1>{getGreetingMessage('Milo')}</h1>
+      <h1>Jumpstart Bootstrap</h1>
       <code>Created by @moralesbang</code>
     </div>
   )
