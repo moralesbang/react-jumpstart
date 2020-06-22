@@ -1,5 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './app'
+/* global module */
+import React from "react"
+import { render } from "react-dom"
 
-ReactDOM.render(<App/>, document.getElementById('app'))
+const root = document.getElementById("root")
+
+function renderApp() {
+  const App = require("./App").default
+  render(<App />, root)
+}
+
+renderApp()
+
+if (module.hot) {
+  module.hot.accept(renderApp)
+}
